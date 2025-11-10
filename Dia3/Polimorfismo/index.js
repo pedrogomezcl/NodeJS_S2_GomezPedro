@@ -11,5 +11,8 @@ misma operación puede aplicarse a diferentes tipos de objetos de manera coheren
 */
 const Perro = require('./models/Perro');
 //❌
+const Gato = require('./models/Gato');
 let perro1= new Perro("Paco");
+let gato1 = new Gato("Melquiades");
 perro1.hablar();
+gato1.hablar();
