@@ -7,8 +7,10 @@ a través de una interfaz pública. En JavaScript esto se puede lograr mediante 
 (como usar _ para indicar que algo es privado), o más formalmente usando el símbolo # para declarar atributos verdaderamente privados.
 */
 const Animal = require('./models/Animal');
-let animal1 = new Animal("Paco");
+let animal1 = new Animal("Paco"); //
 console.log(animal1.nombre);
 animal1.verificarNombre("Paco");
 //❌
 animal1.scrambleNombre();
+console.log(animal1);
+console.log(typeof animal1);

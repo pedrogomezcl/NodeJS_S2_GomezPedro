@@ -29,3 +29,5 @@ let perro2 = new Perro("Oreo");
 console.log(perro.nombre);
 perro.hablar();
 perro2.hablar();
+
+console.log(perro);

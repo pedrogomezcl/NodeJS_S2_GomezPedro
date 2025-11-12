@@ -13,7 +13,7 @@ class Animal{
         }
     }
     scrambleNombre(){
-        console.log(`aergupaj${this.#nombre}r&TGS)&F/(HWH)J)(#)`);
+        return (`aergupaj${this.#nombre}r&TGS)&F/(HWH)J)(#)`);
     }
 }
 module.exports = Animal;
