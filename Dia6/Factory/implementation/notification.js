@@ -22,9 +22,17 @@ class PushNotification extends Notification{
         console.log(`Enviando Notificación Push: ${message}`);
     }
 }
+// Nuevo producto - Whatsapp
+class WhatsAppNotification extends Notification{
+    send(message){
+        console.log(`Enviando WhatsApp: ${message}`);
+    }
+}
+
 module.exports = {
     Notification,
     EmailNotification,
     SMSNotification,
-    PushNotification
+    PushNotification,
+    WhatsAppNotification
 };

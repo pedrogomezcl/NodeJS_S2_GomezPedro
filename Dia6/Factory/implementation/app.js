@@ -12,12 +12,15 @@ SMSNotificationCreator extends Creator
  */
 
 const {
-    EmailNotificationCreator
+    EmailNotificationCreator,
+    WhatsAppNotificationCreator
 } = require('./creators.js');
 
 function main(){
     const emailCreator = new EmailNotificationCreator();
+    const whatsappCreator = new WhatsAppNotificationCreator();
 
     emailCreator.send("Bienvenido al sistema");
+    whatsappCreator.send("Bienvenido a Whatsapp!");
 }
 main();

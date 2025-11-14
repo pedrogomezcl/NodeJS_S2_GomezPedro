@@ -3,7 +3,8 @@
 const{
     EmailNotification,
     SMSNotification,
-    PushNotification
+    PushNotification,
+    WhatsAppNotification
 } = require('./notification.js');
 
 //Clase base (Creator)
@@ -28,7 +29,14 @@ class EmailNotificationCreator extends NotificationCreator{
     }
 }
 
+class WhatsAppNotificationCreator extends NotificationCreator{
+    createNotification(){
+        return new WhatsAppNotification();
+    }
+}
+
 module.exports= {
     NotificationCreator,
-    EmailNotificationCreator
+    EmailNotificationCreator,
+    WhatsAppNotificationCreator
 };
